@@ -85,6 +85,7 @@ export default defineConfig({
       fileName: format => (format === 'iife' ? 'iife-Editor.js' : 'Editor.js')
     },
     rollupOptions: {
+      external: [],
       output: {
         inlineDynamicImports: true
       }
